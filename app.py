@@ -205,6 +205,7 @@ def update_armodel_forecast_table(coin_value, days):
 
         return (ar_table, fig, [])
     else:
+        #Save pickle of the ARIMA model
         AR_model = None
         test_data = c_data.iloc[rows:]
         for element in np.arange(observations):
