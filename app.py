@@ -309,6 +309,7 @@ def update_investment_forecast(active_cell, coin_value, days=1, quantity=1):
     print(sp)
     print(todays_price)
 
+    #Calculation for Profit Margin
     profit = (sp - todays_price) * quantity
     percentage_profit = ((sp - todays_price) / (todays_price * quantity)) * 100
     out = {'Coin': [coin_value], 'Cost Price': [f'{todays_price:.5f}'],
